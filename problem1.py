@@ -4,7 +4,8 @@
 def format_itenerary(flights):
     result = ""
     for index in range(len(flights)):
-        result += f"Itenerary {index + 1}: {flights[index][0]} - From {flights[index][1]} to {flights[index][2]}\n"
+        name, origin, destination = flights[index]
+        result += f"Itenerary {index + 1}: {name} - From {origin} to {destination}\n"
     #end for
     return result
 #end function
